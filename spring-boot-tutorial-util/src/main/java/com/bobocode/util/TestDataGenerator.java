@@ -1,8 +1,8 @@
 package com.bobocode.util;
 
 
-import bobocode.model.Account;
-import bobocode.model.Gender;
+import com.bobocode.model.Account;
+import com.bobocode.model.Gender;
 import io.codearte.jfairy.Fairy;
 import io.codearte.jfairy.producer.person.Person;
 

@@ -1,6 +1,6 @@
 package com.bobocode.controller;
 
-import bobocode.model.Account;
+import com.bobocode.model.Account;
 import com.bobocode.util.TestDataGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

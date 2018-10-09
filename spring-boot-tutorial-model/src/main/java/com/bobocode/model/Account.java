@@ -1,4 +1,4 @@
-package bobocode.model;
+package com.bobocode.model;
 
 import lombok.*;
 
