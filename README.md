@@ -5,4 +5,6 @@ The list of tutorials on Spring Boot features
 You're supposed to understand the basics of *Spring framework*
 ##
 * [Hello Boot MVC](https://github.com/bobocode-projects/spring-boot-tutorial/tree/master/hello-boot-mvc)
+* [Hello Boot JPA](https://github.com/bobocode-projects/spring-boot-tutorial/tree/master/hello-boot-jpa)
+* [Hello REST Repository](https://github.com/bobocode-projects/spring-boot-tutorial/tree/master/hello-rest-repository)
 
