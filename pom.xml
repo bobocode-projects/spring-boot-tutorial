@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hello-boot-mvc</module>
+        <module>hello-boot-jpa</module>
+        <module>hello-rest-repository</module>
         <module>spring-boot-tutorial-model</module>
         <module>spring-boot-tutorial-util</module>
     </modules>
