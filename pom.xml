@@ -11,6 +11,7 @@
         <module>hello-boot-mvc</module>
         <module>hello-boot-jpa</module>
         <module>hello-rest-repository</module>
+        <module>hello-boot-test</module>
         <module>spring-boot-tutorial-model</module>
         <module>spring-boot-tutorial-util</module>
     </modules>
@@ -34,6 +35,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!--Since JAXB APIs is no longer in default classpath in JDK 1.9 -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.2.11</version>
         </dependency>
     </dependencies>
 
