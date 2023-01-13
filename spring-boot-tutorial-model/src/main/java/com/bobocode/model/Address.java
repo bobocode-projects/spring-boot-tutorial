@@ -1,10 +1,11 @@
 package com.bobocode.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Getter
@@ -20,7 +21,8 @@ public class Address {
 	private String street;
 
 	private String apartment;
-
+	
+	@JsonIgnore
 	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "account_id")
 	private Account account;

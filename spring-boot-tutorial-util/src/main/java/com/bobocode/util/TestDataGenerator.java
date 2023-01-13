@@ -4,8 +4,8 @@ package com.bobocode.util;
 import com.bobocode.model.Account;
 import com.bobocode.model.Address;
 import com.bobocode.model.Gender;
-import io.codearte.jfairy.Fairy;
-import io.codearte.jfairy.producer.person.Person;
+import com.devskiller.jfairy.Fairy;
+import com.devskiller.jfairy.producer.person.Person;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -30,7 +30,7 @@ public class TestDataGenerator {
         account.setEmail(person.getEmail());
         account.setBirthday(LocalDate.of(
                 person.getDateOfBirth().getYear(),
-                person.getDateOfBirth().getMonthOfYear(),
+                person.getDateOfBirth().getMonth(),
                 person.getDateOfBirth().getDayOfMonth()));
         account.setGender(Gender.valueOf(person.getSex().name()));
         account.setBalance(BigDecimal.valueOf(random.nextInt(200_000)));

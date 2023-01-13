@@ -6,9 +6,11 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.context.event.EventListener;
 
 @Configuration
-public class DataGeneratorConfig implements InitializingBean {
+public class DataGeneratorConfig {
 
     @Autowired
     private AccountRepository accountRepository;
@@ -18,7 +20,7 @@ public class DataGeneratorConfig implements InitializingBean {
         return new TestDataGenerator();
     }
 
-    @Override
+    @EventListener(ContextRefreshedEvent.class)
     public void afterPropertiesSet() {
         accountRepository.saveAll(dataGenerator().generateAccountList(100));
     }

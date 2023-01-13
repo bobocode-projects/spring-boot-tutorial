@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AccountRestController {
 
     @Autowired
-    TestDataGenerator dataGenerator;
+    private TestDataGenerator dataGenerator;
 
     @GetMapping("/generate")
     public Account generate() {

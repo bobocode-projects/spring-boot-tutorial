@@ -26,7 +26,7 @@ public class AccountRestController {
 
     @GetMapping("/{id}")
     public Account getOne(@PathVariable Long id) {
-        return accountRepository.findById(id).get();
+        return accountRepository.findById(id).orElseThrow();
     }
 
     @GetMapping
